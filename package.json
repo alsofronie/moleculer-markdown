@@ -1,0 +1,49 @@
+{
+  "name": "moleculer-markdown",
+  "version": "1.0.0",
+  "description": "Translates Markdown to Html",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon examples/index.js",
+    "test": "jest",
+    "coverage": "jest --coverage",
+    "lint": "eslint --ext=.js src test",
+    "deps": "npm-check -u",
+    "readme": "node node_modules/moleculer-docgen/index.js -t README.md src/index.js",
+    "coverall": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
+  },
+  "keywords": [
+    "microservice",
+    "moleculer"
+  ],
+  "author": "Alex Sofronie <alsofronie@gmail.com>",
+  "license": "MIT",
+  "peerDependencies": {
+    "moleculer": "^0.13.0 || ^0.12.0"
+  },
+  "devDependencies": {
+    "benchmarkify": "2.1.0",
+    "coveralls": "3.0.2",
+    "eslint": "5.2.0",
+    "jest": "23.4.2",
+    "jest-cli": "23.4.2",
+    "lolex": "2.7.1",
+    "moleculer": "0.13.1",
+    "moleculer-docgen": "0.2.1",
+    "nodemon": "1.18.3",
+    "npm-check": "5.7.1"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/",
+      "/test/services/"
+    ]
+  },
+  "engines": {
+    "node": ">= 6.x.x"
+  },
+  "dependencies": {
+    "showdown": "^1.8.6"
+  }
+}
