@@ -17,7 +17,8 @@ module.exports = {
   name: 'markdown',
 
   /**
-   * Settings, visit https://github.com/showdownjs/showdown#valid-options for full documentation
+   * Settings
+   * @see https://github.com/showdownjs/showdown#valid-options
    */
   settings: {
     /**
@@ -211,8 +212,7 @@ module.exports = {
     emoji: false,
 
     /**
-     * Enable support for underline, no longer rendered to <em> and <strong>
-     * @experimental
+     * EXPERIMENTAL: Enable support for underline, no longer rendered to <em> and <strong>
      * @type {Boolean}
      * @default false
      */
