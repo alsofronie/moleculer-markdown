@@ -18,6 +18,10 @@
   ],
   "author": "Alex Sofronie <alsofronie@gmail.com>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alsofronie/moleculer-markdown"
+  },
   "peerDependencies": {
     "moleculer": "^0.13.0 || ^0.12.0"
   },
