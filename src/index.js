@@ -253,6 +253,10 @@ module.exports = {
   actions: {
     /**
      * Transforms Markdown into HTML
+     * 
+     * @actions
+     * @param {String} md - The markdown content
+     * @returns {String} - Generated HTML content
      */
     transform: {
       params: {
@@ -272,8 +276,8 @@ module.exports = {
      * Transforms markdown into html
      *
      * @methods
-     * @param {String} [md] - The markdown
-     * @returns {String}
+     * @param {String} [md] - The markdown content
+     * @returns {String} - Generated HTML content
      */
     transform(md) {
       let settings = Object.assign({}, this.settings);
