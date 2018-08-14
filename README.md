@@ -92,6 +92,21 @@ broker.start().then(() => {
 # Actions
 
 <!-- AUTO-CONTENT-START:ACTIONS -->
+## `transform` 
+
+Transforms Markdown into HTML
+
+### Parameters
+| Property | Type | Default | Description |
+| -------- | ---- | ------- | ----------- |
+| `md` | `String` | **required** | The markdown content |
+
+### Results
+**Type:** `String`
+
+- Generated HTML content
+
+
 <!-- AUTO-CONTENT-END:ACTIONS -->
 
 <!-- AUTO-CONTENT-TEMPLATE:ACTIONS
@@ -140,12 +155,13 @@ Transforms markdown into html
 
 ### Parameters
 
-| Property | Type     | Default | Description  |
-| -------- | -------- | ------- | ------------ |
-| `md`     | `String` | -       | The markdown |
+| Property | Type | Default | Description |
+| -------- | ---- | ------- | ----------- |
+| `md` | `String` | - | The markdown content |
 
 ### Results
-
+**Type:** `String`
+- Generated HTML content
 **Type:** `String`
 
 <!-- AUTO-CONTENT-END:METHODS -->
